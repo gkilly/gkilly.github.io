@@ -55,6 +55,7 @@ table {
         height: 100%;
         background-color: black;
 	overflow: auto;
+	font-family: 'Alegreya Sans', sans-serif;
 }        
 #resumePic {
 	display: block;
@@ -78,7 +79,7 @@ table {
 	//background-color: gray;
 	padding: 20px 0px 20px 0px;
 	width: 70%;
-        font-size:14px;
+        font-size:16px;
 }
 #leftCol section div  {
 	//background-color: orange;
@@ -103,7 +104,7 @@ table {
 	}
 #leftCol h3 {
 	text-align: center;
-	font-size: 16px;
+	font-size: 18px;
 	display: block;
 	border: solid 1px;
 	margin: 0 auto;
@@ -121,6 +122,7 @@ table {
         margin-left: 32.5%;
 	color: black;
         overflow: auto;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 #rightIntro {
 	height: 100px;
@@ -130,7 +132,7 @@ table {
         
 }
 #rightIntro h2 {
-	font-size: 24px;
+	font-size: 26px;
 }
 #rightCol section {
 	height: auto;
@@ -151,7 +153,9 @@ table {
 div:last-child > section  > div > ul > li:first-child {
 	position: relative;
         bottom: 10px;
-        font-size: 18px;
+        font-size: 20px;
+	font-weight: 700;
+	color: #800000;
         padding-right: 35px;
 	margin-left: 10px;
         margin: auto;
@@ -171,9 +175,12 @@ div:last-child > section  > div > ul > li:first-child {
 	margin-top: 0px;
 }
 #rightCol section div ul li div ul li h1{
-	font-size: 16px;
+	font-size: 18px;
 }
 #rightCol section div ul li div ul li p {
 	display: block;
 	padding-top: 3px;
+}
+.bold {
+	font-weight: 700;
 }
