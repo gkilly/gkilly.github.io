@@ -54,37 +54,31 @@ table {
         width: 30%;
         height: 100%;
         background-color: black;
+	overflow: auto;
 }        
-#rightCol {
-        display: block;
-        width: 70%; 
-        height: 3000px;
-        background-color: white;
-        margin-left: 30%;
-        overflow: auto;
-}
 #resumePic {
 	display: block;
-	height: 150px;
-	max-width: 150px;
+	height: 120px;
+	max-width: 120px;
 	background-color: white; 
 	background-image: url("https://image.ibb.co/m2c7Aw/respic.jpg");
 	margin: 0 auto;
-	margin-top=2.5%;
+	margin-top: 20px;
 	border-radius: 200px;
 }
-#intro h3 {
+#intro h2 {
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 10px;
+	margin-bottom: 25px;
 	color: white;
 }
 #leftCol section {
 	display: block;
 	margin: 0 auto;
 	//background-color: gray;
-	margin-top: .2%;
 	padding: 20px 0px 20px 0px;
 	width: 70%;
+        font-size:14px;
 }
 #leftCol section div  {
 	//background-color: orange;
@@ -109,7 +103,7 @@ table {
 	}
 #leftCol h3 {
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 16px;
 	display: block;
 	border: solid 1px;
 	margin: 0 auto;
@@ -119,10 +113,67 @@ table {
 	margin-top: 1%;
 	
 }
-
-
-
-
-
-
-
+#rightCol {
+        display: block;
+        width: 65%; 
+        height: 3000px;
+        background-color: white;
+        margin-left: 32.5%;
+	color: black;
+        overflow: auto;
+}
+#rightIntro {
+	height: 100px;
+        background-color: yellow;
+        margin: 0 auto;
+        margin-top: 20px;
+        
+}
+#rightIntro h2 {
+	font-size: 24px;
+}
+#rightCol section {
+	height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+	border: 2px solid;
+        border-left: 0px;
+        border-right: 0px;
+}
+#rightCol section > div {
+	//background-color: red;
+        width: 600px;
+        height: auto;
+        margin: 0 auto;
+	padding-top: 20px;
+        padding-bottom: 20px;
+}
+div:last-child > section  > div > ul > li:first-child {
+	position: relative;
+        bottom: 10px;
+        font-size: 18px;
+        padding-right: 35px;
+	margin-left: 10px;
+        margin: auto;
+}
+#rightCol section div ul li{
+	display: inline-block;
+        //background-color: orange;
+}
+#rightCol section div ul li div ul {
+	
+}
+#rightCol section div ul li div ul li {
+	display: block;
+	margin-top: 20px;
+}
+#rightCol section div ul li div ul li:first-child {
+	margin-top: 0px;
+}
+#rightCol section div ul li div ul li h1{
+	font-size: 16px;
+}
+#rightCol section div ul li div ul li p {
+	display: block;
+	padding-top: 3px;
+}
