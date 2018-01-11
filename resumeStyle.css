@@ -55,6 +55,7 @@ table {
         height: 100%;
         background-color: black;
 	overflow: auto;
+	overflow-x: hidden;
 	font-family: 'Alegreya Sans', sans-serif;
 }        
 #resumePic {
@@ -122,6 +123,7 @@ table {
         margin-left: 32.5%;
 	color: black;
         overflow: auto;
+	overflow-x: hidden;
 	font-family: 'Alegreya Sans', sans-serif;
 }
 #rightIntro {
