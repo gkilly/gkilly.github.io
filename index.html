@@ -74,7 +74,6 @@
                                 
                                 for(pos = 1; pos <= this.count; pos ++)
                                 {
-                                        
                                         var posStr = pos.toString();
                                         var par = document.querySelector("#par" + posStr);
                                         var stylePar = document.querySelector("#stylePar" + posStr);
@@ -128,10 +127,10 @@
 					var x = (Math.floor(Math.random() * 120) - 60);
                                         var x1 = x;
                                         var y = -70;
-                                        var s = Math.floor(Math.random() * 10)+5 ;
+                                        var s = Math.floor(Math.random() * 10)+5;
                                         var p = new particle(x + 41, x1, y, s);
                                         var newPar = document.querySelector("#stylePar" + posStr);
-                                        var object = "#par" + posStr + "{ -webkit-transition: " + s.toString() + "s; transition: " + s.toString() + " -webkit-transition-timing-function: linear; transition-timing-function: linear;";
+                                        var object = "#par" + posStr + "{ -webkit-transition: " + s.toString() + "s; transition: " + s.toString() + " -webkit-transition-timing-function:linear; transition-timing-function: linear;";
                                         newPar.innerHTML = object;   
                                         this.particles.push(p);
                                 }
@@ -171,5 +170,6 @@
                 setInterval(colorChange, 10000);
         </script>
   </body>
+<script></script>
 </html>
 
