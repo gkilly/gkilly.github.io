@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>The Site of A Dreamer</title>
+    <title>First Steps</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="particleNames.css">
@@ -23,11 +23,10 @@
                 <nav>
                         <ul>
                                 <li><a class="changeable" href="resume.html">Resume</a></li>
-                                <li><a class="changeable" href="">Projects</a></li>
+                                <li><a class="changeable" target="_blank"href="projects.html">Projects</a></li>
                                 <li><a class="changeable" href="">Personal</a></li>
                         </ul>
                 </nav>
-                <button type="button" onclick="colorChange()">Change Color</button>
                 <button id="addPar">Add Particle</button>
         </main>
         <!--For Particle Generator -->
@@ -169,6 +168,7 @@
                 }
                 partButton.addEventListener('click', function () {pg.push()}, false);
                 partButton.addEventListener('click', runUpdate, false);
+                setInterval(colorChange, 10000);
         </script>
   </body>
 </html>
