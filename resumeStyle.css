@@ -120,6 +120,21 @@ table {
 	margin-top: 1%;
 	
 }
+#ed {
+	bottom: 21vh;
+}
+#ex {
+	bottom: 16.3vh;
+}
+#wp {
+	bottom: 33vh;
+        position: relative;
+	left: -2vh;
+}
+#wp1 {
+	position: relative;
+        left: -2vh;
+}
 #rightCol {
     display: block;
     width: 65%; 
@@ -206,4 +221,21 @@ div:last-child > section  > div > ul > li:first-child {
 	    position: static;
             margin-left: 0;
 	}
+	#rightCol section {
+	    padding-top: 0;
+	}
+        #rightCol section div ul {
+	    display: block;
+            margin: auto;
+            width: 65vh;
+        }
+	#rightCol section div ul li{
+	    display: block;
+            margin-top: 20px;
+	}
+        #ed { position: static; bottom: 0;}
+        #ex { position: static; bottom: 0;}
+        #wp { position: static; bottom: 0; left: 0;}
+        #wp1{ position: static; left: 0; }
+
 }
