@@ -119,56 +119,55 @@ table {
 	
 }
 #rightCol {
-        display: block;
-        width: 65%; 
-        height: auto;
-        background-color: white;
-        margin-left: 32.5%;
+    display: block;
+    width: 65%; 
+    height: auto;
+    background-color: white;
+    margin-left: 32.5%;
 	color: black;
-        overflow: auto;
+    overflow: auto;
 	overflow-x: hidden;
 	font-family: 'Alegreya Sans', sans-serif;
 }
 #rightIntro {
 	height: 100px;
-        background-color: yellow;
-        margin: 0 auto;
-        margin-top: 20px;
-        
+    background-color: yellow;
+    margin: 0 auto;
+    margin-top: 20px;    
 }
 #rightIntro h2 {
 	//font-size: 26px;
 }
 #rightCol section {
 	height: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 	border: 2px solid;
-        border-left: 0px;
-        border-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
 	border-top: 0px;
 }
 #rightCol section > div {
 	//background-color: red;
-        width: 600px;
-        height: auto;
-        margin: 0 auto;
+    width: 84vh;
+    height: auto;
+    margin: 0 auto;
 	padding-top: 20px;
-        padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 div:last-child > section  > div > ul > li:first-child {
 	position: relative;
-        bottom: 10px;
-        font-size: 3vh;
+    bottom: 10px;
+    font-size: 3vh;
 	font-weight: 700;
 	color: #800000;
-        padding-right: 35px;
+    padding-right: 35px;
 	margin-left: 10px;
-        margin: auto;
+    margin: auto;
 }
 #rightCol section div ul li{
 	display: inline-block;
-        //background-color: orange;
+  //background-color: orange;
 }
 #rightCol section div ul li div ul {
 	
@@ -192,5 +191,5 @@ div:last-child > section  > div > ul > li:first-child {
 	font-weight: 700;
 }
 .leftM {
-	margin-left: 115px;
+	margin-left: 16.6vh;
 }
