@@ -48,6 +48,10 @@ table {
         border-collapse: collapse;
         border-spacing: 0;
 }
+#intro {
+	font-size: 3vh;
+        
+}
 #leftCol {
         display: block;
         position: fixed;
@@ -63,12 +67,10 @@ table {
 	display: block;
 	height: 17vh;
 	max-width: 17vh;
-	background-color: white; 
-	background-image: url("https://image.ibb.co/m2c7Aw/respic.jpg");
-	background-position: right 20% bottom -200px;
 	margin: 0 auto;
 	margin-top: 20px;
 	border-radius: 200px;
+	background-color: white;
 }
 #intro h2 {
 	text-align: center;
