@@ -168,4 +168,25 @@ nav ul li a:hover{
 	}
 	
 }
+@media screen and (max-width: 400px) {
+	h1 { 
+	     font-size: 70px;
+	   }
+	nav ul li{
+		font-size: 30px;
+	}
+	nav ul {
+		margin-top: 0px;
+	}
+	.particle {
+		margin-left:63.83335% ;
+		width: 12px;
+		height: 12px;
+		margin-top: 2.43%;
+	}
+}
+	
+	
+	
+
 
