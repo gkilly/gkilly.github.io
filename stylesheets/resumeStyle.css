@@ -252,5 +252,7 @@ div:last-child > section  > div > ul > li:first-child {
 @media screen and (max-width: 382px) {
 	#rightCol section div ul {
 	    width: 100%;
+	    padding-left: 10px;
+	    padding-right: 10px;
 	}
 }
