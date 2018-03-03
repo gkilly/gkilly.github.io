@@ -210,7 +210,7 @@ div:last-child > section  > div > ul > li:first-child {
 .leftM {
 	margin-left: 16.6vh;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 850px) {
 	#leftCol {
 	    width: 100%;
             position: static;
