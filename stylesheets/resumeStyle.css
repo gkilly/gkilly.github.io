@@ -144,7 +144,7 @@ table {
     color: black;
     overflow: auto;
     overflow-x: hidden;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Alegreya Sans', sans-serifi;
 }
 #rightIntro {
     height: 100px;
@@ -162,15 +162,21 @@ table {
     border: 2px solid;
     border-left: 0px;
     border-right: 0px;
-	border-top: 0px;
+    border-top: 0px;
+    overflow-wrap: break-word;
 }
 #rightCol section > div {
-	//background-color: red;
     width: 84vh;
     height: auto;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+#rightCol section > div > h1 {
+    overflow-wrap: break-word;
+}
+#rightCol section > div > p {
+    overflow-wrap: break-word;
 }
 div:last-child > section  > div > ul > li:first-child {
     position: relative;
@@ -224,10 +230,14 @@ div:last-child > section  > div > ul > li:first-child {
 	#rightCol section {
 	    padding-top: 0;
 	}
+	#rightCol section >  div {
+	    width: 100%;
+	}
         #rightCol section div ul {
 	    display: block;
             margin: auto;
             width: 65vh;
+	    overflow-wrap: break-word;
         }
 	#rightCol section div ul li{
 	    display: block;
@@ -238,4 +248,9 @@ div:last-child > section  > div > ul > li:first-child {
         #wp { position: static; bottom: 0; left: 0;}
         #wp1{ position: static; left: 0; }
 
+}
+@media screen and (max-width: 382px) {
+	#rightCol section div ul {
+	    width: 100%;
+	}
 }
