@@ -22,7 +22,7 @@
                 <nav>
                         <ul>
                                 <li><a class="changeable" href="resume.html">Resume</a></li>
-                                <li><a class="changeable" target="_blank"href="projects.html">Projects</a></li>
+                                <li><a class="changeable" href="projects.html">Projects</a></li>
                                 <li><a class="changeable" href="">Personal</a></li>
                         </ul>
                 </nav>
@@ -47,12 +47,12 @@
                         var x;
                         if((r + g + b) > 384)
                         {
-                                
+
                                 for(x = 0; x < changeables.length; x++)
                                 	changeables[x].style.color = "black";
 				for(y = 0; y < particles.length; y++)
 				        particles[y].style.backgroundColor = "black";
-		
+
                         }
                         else
                         {
@@ -61,16 +61,16 @@
 				for(y = 0; y < particles.length; y++)
                                         particles[y].style.backgroundColor = "white";
                         }
-                                
+
                 }
-                function particleGenerator() 
+                function particleGenerator()
                 {
                         this.particles = [];
                         this.maxParticles = 20;
                         this.count = 0;
                         this.update = function() {
                                 var pos;
-                                
+
                                 for(pos = 1; pos <= this.count; pos ++)
                                 {
                                         var posStr = pos.toString();
@@ -80,7 +80,7 @@
                                         var newX, newXVec, newY;
                                         //var particleClass = this.particles[pos - 1];
                                         //console.log(par.getBoundingClientRect());
-                                        if(par.getBoundingClientRect().left < 0) 
+                                        if(par.getBoundingClientRect().left < 0)
 					{
                                                  newXVec = this.particles[pos-1].xVec * -1;
                                                  newX = newXVec;
@@ -91,14 +91,14 @@
                                         if(par.getBoundingClientRect().right >= window.innerWidth)
                                         {
                                                 newXVec = this.particles[pos-1].xVec * -1;
-                                                newX = Math.floor(window.innerWidth * (this.particles[pos-1].xVec / 100)); 
+                                                newX = Math.floor(window.innerWidth * (this.particles[pos-1].xVec / 100));
                                                 par.style.marginLeft = newX.toString() + "%";
                                                 this.particles[pos - 1].xTarget = newX;
                                                 this.particles[pos - 1].xVec = newXVec;
                                         }
                                         if(par.getBoundingClientRect().top <= 0)
                                         {
-                                                
+
                                                 newX = this.particles[pos-1].xTarget + this.particles[pos-1].xVec;
                                                 newY = 120;
                                                 par.style.marginLeft = newX.toString() + "%";
@@ -115,10 +115,10 @@
                                                 this.particles[pos - 1].xTarget = newX;
                                                 this.particles[pos - 1].yTarget = newY;
                                         }
-                                                
+
                                 }
                         };
-                        
+
                         this.initialize = function() {
                                 for(var pos = 1; pos <= this.maxParticles; pos++)
                                 {
@@ -130,30 +130,30 @@
                                         var p = new particle(x + 41, x1, y, s);
                                         var newPar = document.querySelector("#stylePar" + posStr);
                                         var object = "#par" + posStr + "{ -webkit-transition: " + s.toString() + "s; transition: " + s.toString() + " -webkit-transition-timing-function:linear; transition-timing-function: linear;";
-                                        newPar.innerHTML = object;   
+                                        newPar.innerHTML = object;
                                         this.particles.push(p);
                                 }
                         }
-                        
+
                         this.push = function() {
-                                
+
                                 this.count = this.count + 1;
                                 par = document.querySelector("#par" + this.count.toString());
                                 par.style.marginLeft = this.particles[this.count - 1].xTarget.toString() + "%";
                                 par.style.marginTop = this.particles[this.count - 1].yTarget.toString() + "%";
                                 par.style.display = "block";
                         };
-                                
+
                 }
-                function particle(x, x1, y, s, c) 
+                function particle(x, x1, y, s, c)
                 {
                         this.xVec = x1;
                         this.xTarget = x;
                         this.yTarget = y;
                         this.speed = s;
-                } 
-                
-                
+                }
+
+
                 var updateRunning = false;
                 const partButton = document.querySelector("#addPar");
                 var pg = new particleGenerator();
@@ -162,7 +162,7 @@
                         if (!updateRunning) {
 				updateRunning = true;
                                 setInterval(function(){ pg.update(); }, 10);
-                        }                
+                        }
                 }
                 partButton.addEventListener('click', function () {pg.push()}, false);
                 partButton.addEventListener('click', runUpdate, false);
@@ -171,4 +171,3 @@
   </body>
 <script></script>
 </html>
-

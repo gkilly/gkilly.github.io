@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -50,7 +50,7 @@ table {
 }
 #intro {
 	font-size: 3vh;
-        
+
 }
 #leftCol {
         display: block;
@@ -62,7 +62,7 @@ table {
 	overflow-x: hidden;
 	font-family: 'Alegreya Sans', sans-serif;
         font-size: 2.5vh;
-}        
+}
 #resumePic {
 	display: block;
 	height: 17vh;
@@ -118,17 +118,17 @@ table {
 	padding-top: 3%;
 	padding-bottom: 3%;
 	margin-top: 1%;
-	
+
 }
 #ed {
-	bottom: 31vh;
+	bottom: 29vh;
 }
 #ex {
-	bottom: 14vh;
+	bottom: 11vh;
 }
 #wp {
-	bottom: 32.5vh;
-        position: relative;
+	bottom: 28.5vh;
+  position: relative;
 	left: -2vh;
 }
 #wp1 {
@@ -137,7 +137,7 @@ table {
 }
 #rightCol {
     display: block;
-    width: 65%; 
+    width: 65%;
     height: auto;
     background-color: white;
     margin-left: 32.5%;
@@ -150,7 +150,7 @@ table {
     height: 100px;
     background-color: yellow;
     margin: 0 auto;
-    margin-top: 20px;    
+    margin-top: 20px;
 }
 #rightIntro h2 {
 	//font-size: 26px;
@@ -193,7 +193,7 @@ div:last-child > section  > div > ul > li:first-child {
   //background-color: orange;
 }
 #rightCol section div ul li div ul {
-	
+
 }
 #rightCol section div ul li div ul li {
 	display: block;
@@ -216,11 +216,11 @@ div:last-child > section  > div > ul > li:first-child {
 .leftM {
 	margin-left: 16.6vh;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1270px) {
 	#leftCol {
 	    width: 100%;
             position: static;
-            padding-bottom: 20px;   
+            padding-bottom: 20px;
 	}
         #rightCol {
 	    width: 100%;

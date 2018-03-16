@@ -67,17 +67,23 @@ body {
 	font-size: 3.8vh;
 }
 #search {
-  display: inline;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 #searchButton {
-  background-color: white;
+  background-color: black;
   width: 20%;
   float: right;
   position: absolute;
-  height: 10.5vh;
+  height: 10.4vh;
   right: 0px;
   font-size: 3.4vh;
-  color: black;
+  color: white;
+  border: 2px solid;
+	border-top: 0px;
+	border-right: 0;
+	border-color: white;
 }
 
 input{
@@ -97,6 +103,7 @@ input{
 }
 .others {
   margin-left: 10px;
+  margin-top: -10px;
 }
 .others li {
   display: inline-block;
