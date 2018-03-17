@@ -4,6 +4,7 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript Simon</title>
   <link rel="stylesheet" href="stylesheets/simonStyle.css">
+  <link rel="shortcut icon" href="images/gkLogo.png"/>
 </head>
 <body>
   <div id="red"></div>
@@ -29,11 +30,11 @@
 	  var g = document.querySelector("#green");
 	  var b = document.querySelector("#blue");
 	  var y = document.querySelector("#yellow");
-          var time = 600;	
+          var time = 600;
 	  if(!this.stopShow && !(r.style.backgroundColor == "purple" || g.style.backgroundColor == "purple" || b.style.backgroundColor == "purple" || y.style.backgroundColor == "purple"))
-	  { 
+	  {
 	      if(this.pattern[this.rover] == 0)
-	      { 
+	      {
                 r.style.backgroundColor = "purple";
 		setTimeout(function(){ r.style.backgroundColor = "red"; }, time);
 	      }
@@ -43,7 +44,7 @@
 	        setTimeout(function(){ g.style.backgroundColor = "green"; }, time);
 	      }
 	      if(this.pattern[this.rover] == 2)
-	      { 
+	      {
                 b.style.backgroundColor = "purple";
 	        setTimeout(function(){ b.style.backgroundColor = "blue"; }, time);
 	      }
@@ -58,15 +59,15 @@
                 this.stopShow = true;
               }
 	      else
-              { this.rover = this.rover + 1; } 
+              { this.rover = this.rover + 1; }
 	  }
          }
        }
     var listenPattern = [];
     var stopListen = true;
     function clickAnimation(x)
-    {  
-        if(!stopListen) 
+    {
+        if(!stopListen)
         { listenPattern.push(x); }
         var r = document.querySelector("#red");
         var g = document.querySelector("#green");
@@ -110,15 +111,15 @@
       listenPattern = [];
       stopListen = true;
       st.update();
-    }   
+    }
     function gameHandler()
     {
       if(gameOver)
-      { 
+      {
 	alert("Game Over\n Score: " + st.score.toString());
         resetGame();
       }
-      else if(st.stopShow) 
+      else if(st.stopShow)
       {
         stopListen = false;
       }
@@ -127,7 +128,7 @@
 	for(var pos = 0; pos < st.score; pos++)
 	{
           console.log(st.pattern[pos]);
-          console.log(listenPattern[pos]); 
+          console.log(listenPattern[pos]);
 	  if(st.pattern[pos] != listenPattern[pos])
 	  {  gameOver = true; }
         }
@@ -136,11 +137,10 @@
 	  listenPattern = [];
           stopListen = true;
           st.update();
-	} 
+	}
       }
     }
     setInterval(function() { gameHandler(); }, 100);
   </script>
 </body>
 </html>
-
