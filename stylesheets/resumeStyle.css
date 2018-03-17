@@ -70,6 +70,7 @@ table {
 	margin: 0 auto;
 	margin-top: 20px;
 	border-radius: 200px;
+  border: 2px solid white;
 	background-color: white;
 }
 #intro h2 {
